@@ -1,11 +1,11 @@
 
-from pylint_celery import py2celery
-
 from os.path import join, dirname, abspath
 import unittest
 from logilab.common import testlib
 from pylint.testutils import make_tests, LintTestUsingModule, LintTestUsingFile, cb_test_gen
 import sys
+
+import pylint_celery
 
 
 INPUT_DIR = join(dirname(abspath(__file__)), 'input')
