@@ -2,16 +2,18 @@
 from os.path import join, dirname, abspath
 import unittest
 from logilab.common import testlib
-from pylint.testutils import make_tests, LintTestUsingModule, LintTestUsingFile, cb_test_gen
+from pylint.testutils import make_tests, LintTestUsingModule, LintTestUsingFile, cb_test_gen, linter
 import sys
-
-import pylint_celery
 
 
 INPUT_DIR = join(dirname(abspath(__file__)), 'input')
 MESSAGES_DIR = join(dirname(abspath(__file__)), 'messages')
 CALLBACKS = [cb_test_gen(LintTestUsingModule), cb_test_gen(LintTestUsingFile)]
 FILTER_RGX = None
+
+
+linter.load_plugin_modules(['pylint_celery'])
+linter.global_set_option('required-attributes', ())  # remove required __revision__
 
 
 def suite():
