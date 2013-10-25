@@ -20,5 +20,5 @@ setup( name='pylint-celery',
        packages=_packages,
        install_requires=['pylint', 'astroid', 'pylint-plugin-utils'],
        license='GPLv2',
-       keywords=('pylint', 'celery', 'plugin')
+       keywords='pylint celery plugin'
 )
