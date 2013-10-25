@@ -7,4 +7,32 @@ pylint-celery
 [![Latest Version](https://pypip.in/v/pylint-celery/badge.png)](https://crate.io/package/pylint-celery)
 [![Downloads](https://pypip.in/d/pylint-celery/badge.png)](https://crate.io/package/pylint-celery)
 
-Pylint plugin for analysing code using Celery
+# About
+
+`pylint-celery` is a [Pylint](http://pylint.org) plugin for improving code analysis for when analysing code using [Celery](http://celeryproject.org). It is also used by the [Prospector](https://github.com/landscapeio/prospector) tool.
+
+## Usage
+
+#### Pylint
+
+Ensure `pylint-celery` is installed and on your path (`pip install pylint-celery`), and then run pylint:
+
+```
+pylint --load-plugins pylint_celery [..other options..]
+```
+
+#### Prospector
+
+Ensure `pylint-celery` is installed and on your path (`pip install pylint-celery`), and then run prospector:
+
+```
+prospector --uses celery [..other options..]
+```
+
+# Features
+
+* Fixes the warning 'celery.task' is not callable
+
+# License
+
+`pylint-celery` is available under the GPLv2 license.
