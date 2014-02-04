@@ -24,7 +24,9 @@ MANAGER.register_transform(nodes.Module, transform)
 
 def celery_transform(module):
     fake = AstroidBuilder(MANAGER).string_build('''
-class task_dummy(object): pass
+class task_dummy(object):
+	def __call__(self):
+		pass
 ''')
     module.locals['task'] = fake.locals['task_dummy']
 
