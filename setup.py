@@ -17,7 +17,8 @@ setup( name='pylint-celery',
        description=_short_description,
        version=_version,
        packages=_packages,
-       install_requires=['pylint>=1.0', 'astroid>=1.0', 'pylint-plugin-utils>=0.1'],
+       install_requires=['pylint>=1.0', 'astroid>=1.0', 'pylint-plugin-utils>=0.2.1'],
        license='GPLv2',
-       keywords='pylint celery plugin'
+       keywords='pylint celery plugin',
+       zip_safe=False,  # https://github.com/landscapeio/prospector/issues/18#issuecomment-49857277
 )
