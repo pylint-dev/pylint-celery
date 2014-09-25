@@ -2,7 +2,6 @@
 from distutils.core import setup
 from setuptools import find_packages
 
-
 _version = "0.3"
 _packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
 
