@@ -1,9 +1,8 @@
 # -*- coding: UTF-8 -*-
 from distutils.core import setup
 from setuptools import find_packages
-import time
 
-_version = "0.2.dev%s" % int(time.time())
+_version = "0.3"
 _packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
 
 _short_description = "pylint-celery is a Pylint plugin to aid Pylint in recognising and understanding" \
