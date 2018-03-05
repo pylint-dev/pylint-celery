@@ -4,8 +4,8 @@ pylint-celery
 [![Build Status](https://travis-ci.org/landscapeio/pylint-celery.png?branch=master)](https://travis-ci.org/landscapeio/pylint-celery)
 [![Code Quality](https://landscape.io/github/landscapeio/pylint-celery/master/landscape.png)](https://landscape.io/github/landscapeio/pylint-celery)
 [![Coverage Status](https://coveralls.io/repos/landscapeio/pylint-celery/badge.png)](https://coveralls.io/r/landscapeio/pylint-celery)
-[![Latest Version](https://pypip.in/v/pylint-celery/badge.png)](https://crate.io/packages/pylint-celery)
-[![Downloads](https://pypip.in/d/pylint-celery/badge.png)](https://crate.io/packages/pylint-celery)
+[![Latest Version](https://img.shields.io/pypi/v/pylint-celery.svg)](https://crate.io/packages/pylint-celery)
+[![Downloads](https://img.shields.io/pypi/dm/pylint-celery.svg)](https://crate.io/packages/pylint-celery)
 
 # About
 
