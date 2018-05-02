@@ -1,7 +1,6 @@
 
 from os.path import join, dirname, abspath
 import unittest
-from logilab.common import testlib
 from pylint.testutils import make_tests, LintTestUsingModule, LintTestUsingFile, cb_test_gen, linter
 import sys
 
@@ -17,14 +16,14 @@ linter.global_set_option('required-attributes', ())  # remove required __revisio
 
 
 def suite():
-    return testlib.TestSuite([unittest.makeSuite(test, suiteClass=testlib.TestSuite)
-                              for test in make_tests(INPUT_DIR, MESSAGES_DIR,
-                                                     FILTER_RGX, CALLBACKS)])
+    return unittest.TestSuite([unittest.makeSuite(test, suiteClass=unittest.TestSuite)
+                               for test in make_tests(INPUT_DIR, MESSAGES_DIR,
+                                                      FILTER_RGX, CALLBACKS)])
 
 if __name__=='__main__':
     if len(sys.argv) > 1:
         FILTER_RGX = sys.argv[1]
         del sys.argv[1]
-    testlib.unittest_main(defaultTest='suite')
+    unittest.main(defaultTest='suite')
 
 
