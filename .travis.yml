@@ -4,12 +4,12 @@ python:
   - "2.7"
   - "3.5"
   - "3.6"
-  - "3.7"
+  - "3.7-dev"
 install:
-  - "pip install --use-mirrors coverage coveralls"
-  - "pip install --use-mirrors -r test_requirements.txt"
-  - "pip install --use-mirrors git+https://github.com/landscapeio/pylint-plugin-utils.git@develop"
-  - "pip install --use-mirrors --editable ."
+  - "pip install coverage coveralls"
+  - "pip install -r test_requirements.txt"
+  - "pip install git+https://github.com/landscapeio/pylint-plugin-utils.git@develop"
+  - "pip install --editable ."
 script:
   coverage run test/test_func.py
 after_success:
