@@ -20,4 +20,11 @@ setup( name='pylint-celery',
        license='GPLv2',
        keywords='pylint celery plugin',
        zip_safe=False,  # https://github.com/landscapeio/prospector/issues/18#issuecomment-49857277
+       classifiers=(
+            'Programming Language :: Python :: 2.6',
+            'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+            'Programming Language :: Python :: 3.7-dev',
+        )
 )
