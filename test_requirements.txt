@@ -1,2 +1,3 @@
-pylint>=1.0.0
-celery>=3.0.0
+celery
+logilab-common
+pylint
